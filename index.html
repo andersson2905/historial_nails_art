@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salón de Belleza</title>
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+<body>
+    <header>
+        <h1>Dani Nail Art</h1>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h2>Bienvenido a nuestro Salón de Belleza Nail Art</h2>
+        <p>Servicios de belleza de alta calidad para hacerte sentir y lucir increíble.</p>
+        <p>Agenda o cancela tu cita.</p>
+    </section>
+    
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Manicure y Pedicure</li>
+            <li>Corte y Peinado</li>
+            <li>Maquillaje Profesional</li>
+        </ul>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¡Reserva tu cita hoy mismo!</p>
+        <form id="citaForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+            <label for="fecha">Fecha de la cita:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" placeholder="Numero de telefono">
+            
+            <label for="motivo">Motivo de la cita:</label>
+            <textarea id="motivo" name="motivo" placeholder="Motivo de la cita" rows="4"></textarea>
+            
+            <button type="button" onclick="procesarCita()">Agendar Cita</button>
+        </form>
+        
+        <div id="resultado"></div>
+    </section>
+    
+</body>
+</html>
